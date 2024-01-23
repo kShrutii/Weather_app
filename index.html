@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./weather.css">
+   
+</head>
+<body>
+    <div class="weather">
+
+        <div id="navbar" class="navbar">
+            <div class="logo">
+                <div class="logo_imgs">
+                    <img src="https://icon-icons.com/icon/cloud-weather-clouds-cloudy/62491" alt="">
+                </div>
+                <div class="links">
+                    <a href="">Current Weather</a>
+                    <a href="">Forecasts</a>
+                    <a href="">Weather</a>
+                    <a href="">Gallery</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="hero">
+
+            <div class="neww" style="margin-left: 50px; margin-top: 435px;">
+                <input id="cityName" type="" placeholder="Search for Weather by city, zipcode or coordinates">
+                <button onclick="fetchDetails()" class="btn btn-dark">Search</button>
+            </div>
+                    
+               
+                
+                <div class="main">
+                    <div class="menu">
+                        <h4 id="cityDetails">📍New York, NY</h4>
+                        <h5 id="date_time">📅Monday, August 28,2023</h5>
+                    </div>
+                    <div class="list">
+                        <h1 id="temperature" >🌡️ 75°C </h1>
+                        <img id="tempImage" width="40" src="https://cdn.icon-icons.com/icons2/1250/PNG/512/1494258054-rainbowsuncloudcolorfulvibrantspring_84354.png" alt="">
+                        <h3>🔆 Sunny</h3>
+                        <ul>
+                            <li type="none">🌡️ Fahreheit 78°F</li>
+                            <li type="none">🌦️ Humidity</li>
+                            <li type="none">🍃 Wind Pressure</li>
+                        </ul>
+                    </div>
+                </div>
+        
+        </div>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
